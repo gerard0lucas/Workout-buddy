@@ -4,7 +4,7 @@
   "description": "",
   "main": "serber.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
