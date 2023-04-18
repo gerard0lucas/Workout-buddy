@@ -6,19 +6,20 @@ const workoutRouter = require("./router/workoutRouter")
 const userRouter = require('./router/userRouter')
 const cors = require('cors')
 
-app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
- })
+// app.use(function (req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+//  })
 
 app.use(cors({
-  origin:'http://localhost:4122',
-  Credential:'true'
-}))
+    origin:'http://localhost:3000'
+  }))
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
+
+
 
 app.use("/api/users",userRouter)
 
