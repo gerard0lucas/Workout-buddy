@@ -13,7 +13,7 @@ const cors = require('cors')
 //  })
 
 app.use(cors({
-    origin:'https://dfee-wbve.onrender.com'
+    origin:'https://sparkling-squirrel-a464b8.netlify.app'
   }))
 
 app.use(express.json())
